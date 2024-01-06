@@ -1,0 +1,70 @@
+:root {
+  /* Font Family */
+  --ff_raleway: 'Raleway', sans-serif;
+  --ff_opensans: 'Open Sans', sans-serif;
+
+  /* Font Weight */
+  --fw_400: 400;
+  --fw_700: 700;
+
+  /* Font Size */
+  --fs__800: 1.5rem; /* 24px */
+  --fs__700: 1.125rem; /* 18px */
+  --fs__600: 1rem; /* 16px */
+  --fs__500: 0.875rem; /* 14px */
+  --fs__400: 0.75rem; /* 12px */
+  --fs__300: 0.625rem; /* 10px */
+  --fs__200: 0.5625rem; /* 9px */
+  --fs__100: 0.375rem; /* 6px */
+
+  /* Line Height */
+  --lh_800: 2.25rem; /* 36px */
+  --lh_700: 1.5rem; /* 24px */
+  --lh_600: 1.3125rem; /* 21px */
+  --lh_500: 1.13125rem; /* 18.1px */
+  --lh_400: 0.73755rem; /* 11.8px */
+
+  /* Colors */
+  --clr_primary_darkblue: hsl(243, 87%, 12%);
+  --clr_primary_desaturatedblue: hsl(238, 22%, 44%);
+  --clr_accent_brightblue: hsl(224, 93%, 58%);
+  --clr_accent_cyan: hsl(170, 45%, 43%);
+  --clr_neutral_grayishblue: hsl(240, 75%, 98%);
+  --clr_neutral_lightgray: hsl(0, 0%, 75%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  min-width: 100%;
+}
