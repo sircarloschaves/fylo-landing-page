@@ -25,12 +25,13 @@
   --lh_400: 0.73755rem; /* 11.8px */
 
   /* Colors */
-  --clr_primary_darkblue: hsl(243, 87%, 12%);
-  --clr_primary_desaturatedblue: hsl(238, 22%, 44%);
-  --clr_accent_brightblue: hsl(224, 93%, 58%);
-  --clr_accent_cyan: hsl(170, 45%, 43%);
-  --clr_neutral_grayishblue: hsl(240, 75%, 98%);
-  --clr_neutral_lightgray: hsl(0, 0%, 75%);
+ --clr_primary_darkblue: hsl(243, 87%, 12%); /* 070439 */
+  --clr_primary_desaturatedblue: hsl(239, 22%, 44%); /* 585989 */
+  --clr_accent_brightblue: hsl(224, 93%, 58%); /* 3065f8 */
+  --clr_accent_cyan: hsl(170, 45%, 43%); /* 3c9f8f */
+  --clr_neutral_grayishblue: hsl(240, 80%, 98%); /* f6f6fe */
+  --clr_neutral_lightgray: hsl(0, 0%, 75%); /* bfbfbf */
+  --clr-neutral_white: hsl(0, 0%, 100%); /* ffffff */
 }
 
 *,
