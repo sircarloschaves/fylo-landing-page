@@ -8,30 +8,50 @@
   --fw_700: 700;
 
   /* Font Size */
-  --fs__800: 1.5rem; /* 24px */
-  --fs__700: 1.125rem; /* 18px */
-  --fs__600: 1rem; /* 16px */
-  --fs__500: 0.875rem; /* 14px */
-  --fs__400: 0.75rem; /* 12px */
-  --fs__300: 0.625rem; /* 10px */
-  --fs__200: 0.5625rem; /* 9px */
-  --fs__100: 0.375rem; /* 6px */
+  --fs__800: 1.5rem;
+  /* 24px */
+  --fs__700: 1.125rem;
+  /* 18px */
+  --fs__600: 1rem;
+  /* 16px */
+  --fs__500: 0.875rem;
+  /* 14px */
+  --fs__400: 0.75rem;
+  /* 12px */
+  --fs__300: 0.625rem;
+  /* 10px */
+  --fs__200: 0.5625rem;
+  /* 9px */
+  --fs__100: 0.375rem;
+  /* 6px */
 
   /* Line Height */
-  --lh_800: 2.25rem; /* 36px */
-  --lh_700: 1.5rem; /* 24px */
-  --lh_600: 1.3125rem; /* 21px */
-  --lh_500: 1.13125rem; /* 18.1px */
-  --lh_400: 0.73755rem; /* 11.8px */
+  --lh_800: 2.25rem;
+  /* 36px */
+  --lh_700: 1.5rem;
+  /* 24px */
+  --lh_600: 1.3125rem;
+  /* 21px */
+  --lh_500: 1.13125rem;
+  /* 18.1px */
+  --lh_400: 0.73755rem;
+  /* 11.8px */
 
   /* Colors */
- --clr_primary_darkblue: hsl(243, 87%, 12%); /* 070439 */
-  --clr_primary_desaturatedblue: hsl(239, 22%, 44%); /* 585989 */
-  --clr_accent_brightblue: hsl(224, 93%, 58%); /* 3065f8 */
-  --clr_accent_cyan: hsl(170, 45%, 43%); /* 3c9f8f */
-  --clr_neutral_grayishblue: hsl(240, 80%, 98%); /* f6f6fe */
-  --clr_neutral_lightgray: hsl(0, 0%, 75%); /* bfbfbf */
-  --clr-neutral_white: hsl(0, 0%, 100%); /* ffffff */
+  --clr_primary_darkblue: hsl(243, 87%, 12%);
+  /* 070439 */
+  --clr_primary_desaturatedblue: hsl(239, 22%, 44%);
+  /* 585989 */
+  --clr_accent_brightblue: hsl(224, 93%, 58%);
+  /* 3065f8 */
+  --clr_accent_cyan: hsl(170, 45%, 43%);
+  /* 3c9f8f */
+  --clr_neutral_grayishblue: hsl(240, 80%, 98%);
+  /* f6f6fe */
+  --clr_neutral_lightgray: hsl(0, 0%, 75%);
+  /* bfbfbf */
+  --clr-neutral_white: hsl(0, 0%, 100%);
+  /* ffffff */
 }
 
 *,
@@ -66,6 +86,107 @@ svg {
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--clr-neutral_white);
   min-width: 100%;
+}
+
+.main-header {
+  margin-block-start: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+.main-header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--clr_primary_darkblue);
+  font-family: var(--ff_raleway);
+  font-size: var(--fs__400);
+  font-weight: var(--fw_400);
+  margin-inline-start: 1.5rem;
+  padding-block: .3em;
+}
+
+.main-header .logo {
+  width: 80px;
+}
+
+.hero-section {
+  margin-block-start: 6.125rem;
+  padding-inline: 1.75rem;
+}
+
+.hero-title {
+  font-family: var(--ff_opensans);
+  font-size: var(--fs__800);
+  font-weight: var(--fw_700);
+  line-height: var(--lh_800);
+  text-align: center;
+  color: var(--clr_primary_darkblue);
+  margin-block-start: 2.5rem;
+}
+
+.hero-text {
+  font-family: var(--ff_opensans);
+  font-weight: var(--fw_400);
+  font-size: var(--fs__500);
+  line-height: var(--lh_600);
+  text-align: center;
+  color: var(--clr_primary_darkblue);
+  padding-inline: .3em;
+  margin-block-start: 1.5rem;
+}
+
+.hero-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-inline: 0.5rem;
+  margin-block-start: 2rem;
+}
+
+.hero-section input[type="email"] {
+  position: relative;
+  font-family: var(--ff_raleway);
+  font-size: var(--fs__400);
+  font-weight: var(--fw_400);
+  line-height: 1;
+  color: var(--clr_primary_darkblue);
+  padding-inline: 1.3125rem;
+  padding-block: 0.75rem;
+  border: 0.039375rem solid var(--clr_primary_darkblue);
+  border-radius: 0.195625rem;
+  outline: none;
+}
+
+.hero-section input[type="email"]:invalid {
+  border-color: hsl(343, 84%, 61%);
+}
+
+.hero-input::placeholder {
+  color: var(--clr_neutral_lightgray);
+}
+
+.hero-btn {
+  display: inline-block;
+  font-family: var(--ff_raleway);
+  font-size: var(--fs__500);
+  font-weight: var(--fw_700);
+  line-height: 1;
+  text-align: center;
+  color: var(--clr-neutral_white);
+  background-color: var(--clr_accent_brightblue);
+  padding-block: 0.75rem;
+  border: none;
+  border-radius: 0.195625rem;
+  cursor: pointer;
+  box-shadow: 0.125rem 0.1875rem 0.375rem rgba(0, 0, 0, 0.1593);
 }
