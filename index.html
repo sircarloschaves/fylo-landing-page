@@ -47,7 +47,7 @@
           family, and co-workers.
         </p>
 
-        <form action="#">
+        <form>
 
           <input type="email" name="email" class="hero-input" placeholder="Enter your email…">
 
@@ -62,59 +62,61 @@
 
       <img src="assets/illustration-2.svg" alt="" class="productive-img">
 
-      <h2 class="productive-subtitle">Stay productive, wherever you are</h2>
+      <div class="wrapper">
+        <h2 class="productive-subtitle">Stay productive, wherever you are</h2>
 
-      <p class="productive-text">
-        Never let location be an issue when accessing your files. Fylo has you
-        covered for all of your file storage needs.
-      </p>
-
-      <p class="productive-text">
-        Securely share files and folders with friends, family and colleagues for
-        live collaboration. No email attachments required!
-      </p>
-
-      <a href="#seehow" class="productive-link">
-        <div class="productive-link-wrapper">
-          <span>See how Fylo works</span>
-
-
-          <svg viewBox="0 0 16 16" class="arrow-right">
-            <defs>
-              <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
-                <feOffset in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-                <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-                <feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
-                  in="shadowBlurOuter1"></feColorMatrix>
-              </filter>
-            </defs>
-            <g fill="none" fill-rule="evenodd">
-              <g transform="translate(2 2)">
-                <circle cx="6" cy="6" r="6" fill="#000" filter="url(#a)"></circle>
-                <circle class="fill-color" cx="6" cy="6" r="6" fill="#3DA08F"></circle>
-              </g>
-              <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"></path>
-            </g>
-          </svg>
-        </div>
-      </a>
-
-      <aside class="testimonial-card">
-        <p class="testimonial-text">
-          Fylo has improved our team productivity by an order of magnitude. Since
-          making the switch our team has become a well-oiled collaboration machine.
+        <p class="productive-text">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
         </p>
 
+        <p class="productive-text">
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
 
-        <div class="testimonial-person">
-          <img src="assets/avatar-testimonial.jpg" alt="" aria-hidden="true" class="testimonial-pic">
+        <a href="#seehow" class="productive-link">
+          <div class="productive-link-wrapper">
+            <span>See how Fylo works</span>
 
-          <div class="text-wrapper">
-            <h3 class="person-name">Kyle Burton</h3>
-            <p class="person-description">Founder & CEO, Huddle</p>
+
+            <svg viewBox="0 0 16 16" class="arrow-right">
+              <defs>
+                <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+                  <feOffset in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                  <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                  <feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                    in="shadowBlurOuter1"></feColorMatrix>
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="translate(2 2)">
+                  <circle cx="6" cy="6" r="6" fill="#000" filter="url(#a)"></circle>
+                  <circle class="fill-color" cx="6" cy="6" r="6" fill="#3DA08F"></circle>
+                </g>
+                <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"></path>
+              </g>
+            </svg>
           </div>
-        </div>
-      </aside>
+        </a>
+
+        <aside class="testimonial-card">
+          <p class="testimonial-text">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+
+
+          <div class="testimonial-person">
+            <img src="assets/avatar-testimonial.jpg" alt="" aria-hidden="true" class="testimonial-pic">
+
+            <div class="text-wrapper">
+              <h3 class="person-name">Kyle Burton</h3>
+              <p class="person-description">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </aside>
+      </div>
 
     </section>
 
@@ -126,7 +128,7 @@
         If you have any questions, our support team would be happy to help you.
       </p>
 
-      <form action="#" class="cta-form">
+      <form class="cta-form">
         <input type="email" name="email" placeholder="email@example.com" class="input-email">
         <button type="submit" class="cta-btn">Get Started For Free</button>
       </form>
