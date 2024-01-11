@@ -251,6 +251,7 @@ body {
   color: var(--clr_accent_cyan);
   margin-block-start: 2.25rem;
   position: relative;
+  transition: color 200ms;
 }
 
 .productive-link:hover,
@@ -559,12 +560,21 @@ body {
   .hero-section form {
     flex-direction: row;
     padding-inline: 0;
+    position: relative;
   }
   
   .hero-section input[type="email"] {
     font-size: 0.875rem;
     padding-inline-end: 10.75rem;
     padding-block: 0.9375rem;
+  }
+
+  .error-message {
+    position: absolute;
+    font-size: 0.75rem;
+    font-family: var(--ff_opensans);
+    color: hsl(343, 84%, 61%);
+    top: 55px;
   }
 
   .hero-btn {
@@ -578,11 +588,14 @@ body {
     display: grid;
     grid-template-columns: 1.05fr 1fr;
     padding-inline: 5rem;
+    padding-block-end: 6.6875rem;
   }
 
   .productive-img {
     width: 542px;
     grid-column: 2;
+    padding-block-start: 0;
+    margin-block-start: 12.625rem;
   }
 
   .productive-section .wrapper {
@@ -613,4 +626,135 @@ body {
     margin-block-start: 1rem;
   }
 
+  .productive-link {
+    display: inline-flex;
+    align-items: center;
+    margin-block-start: 0.9375rem;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .productive-link .arrow-right {
+    width: 1rem;
+  }
+
+  .productive-link-wrapper::before {
+    bottom: -4px;
+  }
+
+  .testimonial-card {
+    max-width: initial;
+    width: 356px;
+    margin-block-start: 2.8125rem;
+    padding-inline: 2.125rem;
+    padding-block-start: 3.0625rem;
+    padding-block-end: 1.625rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.8125rem;
+    line-height: 1.4375rem;
+  }
+
+  .testimonial-pic {
+    width: 32px;
+  }
+
+  .person-name {
+    font-size: 0.6875rem;
+  }
+
+  .person-description {
+    font-size: 0.5rem;
+    line-height: 0.9375rem;
+  }
+
+  .testimonial-text::before {
+    top: -1.400rem;
+    width: 14px;
+    content: url('assets/icon-quotes.svg');
+  }
+
+  .cta-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14.8125rem;
+    padding-inline-start: 5rem;
+    padding-inline-end: 7.5rem;
+    padding-block-start: 6.25rem;
+    padding-block-end: 5.3125rem;
+  }
+
+  .cta-subtitle {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-block-start: 1.125rem;
+  }
+
+  .cta-form {
+    gap: 1rem;
+    margin-block-start: 0.75rem;
+    position: relative;
+  }
+
+  .cta-form .error-message {
+    position: absolute;
+    color: var(--clr-neutral_white);
+    font-size: 0.75rem;
+    top: 50px;
+  }
+
+  .cta-form input[type="email"] {
+    font-size: 0.75rem;
+    padding-block: 1rem;
+    padding-inline: 1.375rem;
+    box-shadow: 0.125rem 0.1875rem 0.375rem hsla(243, 87%, 12%, 0.157);
+    border-radius: 0.195625rem;
+  }
+
+  .cta-btn {
+    font-size: 0.875rem;
+    display: inline-block;
+    align-self: start;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    box-shadow: 0.125rem 0.1875rem 0.375rem hsla(243, 87%, 12%, 0.157);
+    border-radius: 0.195625rem;
+
+  }
+
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 5rem;
+    padding-inline-end: 16.3125rem;
+    padding-block-end: 5.75rem;
+    padding-block-end: 5.375rem;
+  }
+
+  .contact {
+    margin-block-start: 2.25rem;
+  }
+
+  .main-footer-nav {
+    display: flex;
+    gap: 12.5rem;
+    margin-block-start: 1.875rem;
+  }
+
+  .footer-nav-links {
+    margin-block-start: 0;
+  }
+
+  .social-nav {
+    margin-block-start: 1.875rem;
+    align-self: initial;
+  }
 }

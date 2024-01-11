@@ -49,9 +49,9 @@
 
         <form>
 
-          <input type="email" name="email" class="hero-input" placeholder="Enter your email…">
-
-          <button class="hero-btn" type="submit">Get Started</button>
+          <input type="email" name="email" class="hero-input email-input" placeholder="Enter your email…">
+          <span class="error-message" id="emailError"></span>
+          <button class="hero-btn submit-btn" type="submit">Get Started</button>
 
         </form>
       </div>
@@ -121,35 +121,44 @@
     </section>
 
     <section class="cta-section">
-      <h2 class="cta-subtitle">Get early access today</h2>
 
-      <p class="cta-text">
-        It only takes a minute to sign up and our free starter tier is extremely generous.
-        If you have any questions, our support team would be happy to help you.
-      </p>
+      <div class="cta-text-wrapper">
+
+        <h2 class="cta-subtitle">Get early access today</h2>
+
+        <p class="cta-text">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
 
       <form class="cta-form">
-        <input type="email" name="email" placeholder="email@example.com" class="input-email">
-        <button type="submit" class="cta-btn">Get Started For Free</button>
+        <input type="email" name="email" placeholder="email@example.com" class="input-email email-input">
+        <span class="error-message" id="emailError"></span>
+        <button type="submit" class="cta-btn submit-btn">Get Started For Free</button>
       </form>
 
     </section>
   </main>
 
   <footer class="main-footer">
-    <img src="assets/logo-white.svg" alt="" class="footer-logo">
+    <div class="flex-item-1">
+      <img src="assets/logo-white.svg" alt="" class="footer-logo">
 
-    <address class="contact">
-      <div class="contact-wrapper">
-        <img src="assets/icon-phone.svg" alt="" class="contact-icon">
-        <span class="contact-text">Phone: +1-543-123-4567</span>
-      </div>
 
-      <div class="contact-wrapper">
-        <img src="assets/icon-email.svg" alt="" class="contact-icon">
-        <span class="contact-text">example@fylo.com</span>
-      </div>
-    </address>
+      <address class="contact">
+
+        <div class="contact-wrapper">
+          <img src="assets/icon-phone.svg" alt="" class="contact-icon">
+          <span class="contact-text">Phone: +1-543-123-4567</span>
+        </div>
+
+        <div class="contact-wrapper">
+          <img src="assets/icon-email.svg" alt="" class="contact-icon">
+          <span class="contact-text">example@fylo.com</span>
+        </div>
+      </address>
+    </div>
 
     <nav class=main-footer-nav>
       <ul class="footer-nav-links">
@@ -202,6 +211,7 @@
 
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
