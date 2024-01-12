@@ -10,11 +10,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution link](https://www.frontendmentor.io/solutions/fylo-landing-page-with-grid-layout-fO91EPtFSy)
+- Live Site URL: [Live site](https://sircarloschaves.github.io/fylo-landing-page/)
 
 ## My process
 
@@ -43,13 +39,9 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-### What I learned
-
-
-### Continued development
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [sircarloschaves](https://github.com/sircarloschaves)
+- Frontend Mentor - [@sircarloschaves](https://www.frontendmentor.io/profile/sircarloschaves)
+- Twitter/X - [@carloschavesdev](https://twitter.com/carloschavesdev)
